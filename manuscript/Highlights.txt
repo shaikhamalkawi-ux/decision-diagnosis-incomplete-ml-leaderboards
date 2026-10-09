@@ -1,0 +1,5 @@
+Decision diagnosis separates evidence ambiguity from certificate limitation.
+Exact constructions prove a fixed-decision certificate obstruction.
+TabArena witnesses prove information limitation in 47 of 80 traces.
+All 47 witnessed traces resolve first at the recorded stopping prefix.
+A stronger tested certificate gave no earlier stopping at 480 checkpoints.
