@@ -46,7 +46,7 @@ A failed witness search is not treated as proof of agreement, and a failed certi
 - `proofs/` — explicit analytical proof details.
 - `data/` — admitted-scope and provenance notes for the TabArena analysis.
 - `results/` — publication-facing result summaries.
-- `verification/` — machine-readable verification summaries.
+- `verification/` — machine-readable verification summaries and the frozen source ledgers required by the fixed-trace verifier.
 
 ## Empirical-data boundary
 
@@ -62,11 +62,7 @@ For the exact synthetic obstruction checks:
 python code/replay_exact_obstructions.py
 ```
 
-For the fixed-trace verification summary:
-
-```bash
-python code/verify_fixed_trace_qstar.py
-```
+For the fixed-trace verification, use the frozen ledgers in `verification/source_ledgers/`; the exact command and source hashes are recorded in `verification/README.md`.
 
 Figure-generation scripts are included in `code/`.
 
@@ -80,4 +76,4 @@ The KBS submission candidate is self-contained: the former supplementary proof a
 
 ## Permanent archive
 
-A DOI-bearing archival snapshot has not yet been assigned in this repository. If a Zenodo release is created, the DOI should be added here and to `CITATION.cff` without changing the scientific results.
+A DOI-bearing archival snapshot has not yet been assigned. A Zenodo release can be created after the final submission lock; its DOI should then be added here and to `CITATION.cff` without changing the scientific results.
