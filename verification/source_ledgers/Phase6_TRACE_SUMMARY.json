@@ -1,0 +1,1000 @@
+[
+  {
+    "seed": 0,
+    "policy": "random_fold",
+    "task_mass_units": 2,
+    "Q": 816,
+    "trace_sha256": "6bb5da8a31baee6d9a73d681621d6313b2f75647a486295a2fcd59c7d06f2600",
+    "earliest_sampled_augmented_q": 816,
+    "earliest_sampled_label": "Q",
+    "earliest_sampled_record_index": 5,
+    "conservative_saved_disclosures": 0,
+    "terminal_reproduced": true,
+    "labelled_outcomes": [
+      {
+        "label": "floor_3Q_over_4",
+        "q": 612,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "floor_9Q_over_10",
+        "q": 734,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "floor_19Q_over_20",
+        "q": 775,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "floor_99Q_over_100",
+        "q": 807,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "Q_minus_1",
+        "q": 815,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "Q",
+        "q": 816,
+        "singleton": "preference_dependence",
+        "augmented": "preference_dependence"
+      }
+    ],
+    "interpretation": "earliest sampled certificate, not the first possible stopping time"
+  },
+  {
+    "seed": 0,
+    "policy": "random_fold",
+    "task_mass_units": 4,
+    "Q": 811,
+    "trace_sha256": "ef81b222040d804bb1c0dbabca1755578140e23010a443b3b79d710699792260",
+    "earliest_sampled_augmented_q": 811,
+    "earliest_sampled_label": "Q",
+    "earliest_sampled_record_index": 11,
+    "conservative_saved_disclosures": 0,
+    "terminal_reproduced": true,
+    "labelled_outcomes": [
+      {
+        "label": "floor_3Q_over_4",
+        "q": 608,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "floor_9Q_over_10",
+        "q": 729,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "floor_19Q_over_20",
+        "q": 770,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "floor_99Q_over_100",
+        "q": 802,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "Q_minus_1",
+        "q": 810,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "Q",
+        "q": 811,
+        "singleton": "preference_dependence",
+        "augmented": "preference_dependence"
+      }
+    ],
+    "interpretation": "earliest sampled certificate, not the first possible stopping time"
+  },
+  {
+    "seed": 0,
+    "policy": "random_task_blocks",
+    "task_mass_units": 2,
+    "Q": 816,
+    "trace_sha256": "a1ed04afbd349ba4c8802eeee77714a41ff5e20b16ae5ee6dd3876e196182232",
+    "earliest_sampled_augmented_q": 816,
+    "earliest_sampled_label": "Q",
+    "earliest_sampled_record_index": 17,
+    "conservative_saved_disclosures": 0,
+    "terminal_reproduced": true,
+    "labelled_outcomes": [
+      {
+        "label": "floor_3Q_over_4",
+        "q": 612,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "floor_9Q_over_10",
+        "q": 734,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "floor_19Q_over_20",
+        "q": 775,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "floor_99Q_over_100",
+        "q": 807,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "Q_minus_1",
+        "q": 815,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "Q",
+        "q": 816,
+        "singleton": "preference_dependence",
+        "augmented": "preference_dependence"
+      }
+    ],
+    "interpretation": "earliest sampled certificate, not the first possible stopping time"
+  },
+  {
+    "seed": 0,
+    "policy": "random_task_blocks",
+    "task_mass_units": 4,
+    "Q": 768,
+    "trace_sha256": "2d1a62dcd637abad04db54256c54bb547a4d918eb8a66f535015f1991fde025d",
+    "earliest_sampled_augmented_q": 768,
+    "earliest_sampled_label": "Q",
+    "earliest_sampled_record_index": 23,
+    "conservative_saved_disclosures": 0,
+    "terminal_reproduced": true,
+    "labelled_outcomes": [
+      {
+        "label": "floor_3Q_over_4",
+        "q": 576,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "floor_9Q_over_10",
+        "q": 691,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "floor_19Q_over_20",
+        "q": 729,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "floor_99Q_over_100",
+        "q": 760,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "Q_minus_1",
+        "q": 767,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "Q",
+        "q": 768,
+        "singleton": "preference_dependence",
+        "augmented": "preference_dependence"
+      }
+    ],
+    "interpretation": "earliest sampled certificate, not the first possible stopping time"
+  },
+  {
+    "seed": 0,
+    "policy": "cheapest_remaining",
+    "task_mass_units": 2,
+    "Q": 786,
+    "trace_sha256": "710bc873936e9e2f4903783f5dad001d1b32d291fa97763540963495781580fb",
+    "earliest_sampled_augmented_q": 786,
+    "earliest_sampled_label": "Q",
+    "earliest_sampled_record_index": 29,
+    "conservative_saved_disclosures": 0,
+    "terminal_reproduced": true,
+    "labelled_outcomes": [
+      {
+        "label": "floor_3Q_over_4",
+        "q": 589,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "floor_9Q_over_10",
+        "q": 707,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "floor_19Q_over_20",
+        "q": 746,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "floor_99Q_over_100",
+        "q": 778,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "Q_minus_1",
+        "q": 785,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "Q",
+        "q": 786,
+        "singleton": "preference_dependence",
+        "augmented": "preference_dependence"
+      }
+    ],
+    "interpretation": "earliest sampled certificate, not the first possible stopping time"
+  },
+  {
+    "seed": 0,
+    "policy": "cheapest_remaining",
+    "task_mass_units": 4,
+    "Q": 666,
+    "trace_sha256": "2b1a00f4c2da6f836ad4a735c7092848fc3f20dab2d1d7c322b0795eb397605d",
+    "earliest_sampled_augmented_q": 666,
+    "earliest_sampled_label": "Q",
+    "earliest_sampled_record_index": 35,
+    "conservative_saved_disclosures": 0,
+    "terminal_reproduced": true,
+    "labelled_outcomes": [
+      {
+        "label": "floor_3Q_over_4",
+        "q": 499,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "floor_9Q_over_10",
+        "q": 599,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "floor_19Q_over_20",
+        "q": 632,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "floor_99Q_over_100",
+        "q": 659,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "Q_minus_1",
+        "q": 665,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "Q",
+        "q": 666,
+        "singleton": "preference_dependence",
+        "augmented": "preference_dependence"
+      }
+    ],
+    "interpretation": "earliest sampled certificate, not the first possible stopping time"
+  },
+  {
+    "seed": 0,
+    "policy": "decision_gap",
+    "task_mass_units": 2,
+    "Q": 786,
+    "trace_sha256": "710bc873936e9e2f4903783f5dad001d1b32d291fa97763540963495781580fb",
+    "earliest_sampled_augmented_q": 786,
+    "earliest_sampled_label": "Q",
+    "earliest_sampled_record_index": 41,
+    "conservative_saved_disclosures": 0,
+    "terminal_reproduced": true,
+    "labelled_outcomes": [
+      {
+        "label": "floor_3Q_over_4",
+        "q": 589,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "floor_9Q_over_10",
+        "q": 707,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "floor_19Q_over_20",
+        "q": 746,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "floor_99Q_over_100",
+        "q": 778,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "Q_minus_1",
+        "q": 785,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "Q",
+        "q": 786,
+        "singleton": "preference_dependence",
+        "augmented": "preference_dependence"
+      }
+    ],
+    "interpretation": "earliest sampled certificate, not the first possible stopping time"
+  },
+  {
+    "seed": 0,
+    "policy": "decision_gap",
+    "task_mass_units": 4,
+    "Q": 666,
+    "trace_sha256": "2b1a00f4c2da6f836ad4a735c7092848fc3f20dab2d1d7c322b0795eb397605d",
+    "earliest_sampled_augmented_q": 666,
+    "earliest_sampled_label": "Q",
+    "earliest_sampled_record_index": 47,
+    "conservative_saved_disclosures": 0,
+    "terminal_reproduced": true,
+    "labelled_outcomes": [
+      {
+        "label": "floor_3Q_over_4",
+        "q": 499,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "floor_9Q_over_10",
+        "q": 599,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "floor_19Q_over_20",
+        "q": 632,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "floor_99Q_over_100",
+        "q": 659,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "Q_minus_1",
+        "q": 665,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "Q",
+        "q": 666,
+        "singleton": "preference_dependence",
+        "augmented": "preference_dependence"
+      }
+    ],
+    "interpretation": "earliest sampled certificate, not the first possible stopping time"
+  },
+  {
+    "seed": 1,
+    "policy": "random_fold",
+    "task_mass_units": 2,
+    "Q": 816,
+    "trace_sha256": "9284970d01203a88eb3f835dc59ec437aab05331d46949c93a7678adf1f2569c",
+    "earliest_sampled_augmented_q": 816,
+    "earliest_sampled_label": "Q",
+    "earliest_sampled_record_index": 53,
+    "conservative_saved_disclosures": 0,
+    "terminal_reproduced": true,
+    "labelled_outcomes": [
+      {
+        "label": "floor_3Q_over_4",
+        "q": 612,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "floor_9Q_over_10",
+        "q": 734,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "floor_19Q_over_20",
+        "q": 775,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "floor_99Q_over_100",
+        "q": 807,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "Q_minus_1",
+        "q": 815,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "Q",
+        "q": 816,
+        "singleton": "preference_dependence",
+        "augmented": "preference_dependence"
+      }
+    ],
+    "interpretation": "earliest sampled certificate, not the first possible stopping time"
+  },
+  {
+    "seed": 1,
+    "policy": "random_fold",
+    "task_mass_units": 4,
+    "Q": 812,
+    "trace_sha256": "bc3de366596d97a2692c6a431abe03ee4c45d35cfbbedf2934ceb214eb56c01a",
+    "earliest_sampled_augmented_q": 812,
+    "earliest_sampled_label": "Q",
+    "earliest_sampled_record_index": 59,
+    "conservative_saved_disclosures": 0,
+    "terminal_reproduced": true,
+    "labelled_outcomes": [
+      {
+        "label": "floor_3Q_over_4",
+        "q": 609,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "floor_9Q_over_10",
+        "q": 730,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "floor_19Q_over_20",
+        "q": 771,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "floor_99Q_over_100",
+        "q": 803,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "Q_minus_1",
+        "q": 811,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "Q",
+        "q": 812,
+        "singleton": "preference_dependence",
+        "augmented": "preference_dependence"
+      }
+    ],
+    "interpretation": "earliest sampled certificate, not the first possible stopping time"
+  },
+  {
+    "seed": 1,
+    "policy": "random_task_blocks",
+    "task_mass_units": 2,
+    "Q": 816,
+    "trace_sha256": "56318726c675c5697ed13292a403e9538d286a4709ee170e1ec00e4105264011",
+    "earliest_sampled_augmented_q": 816,
+    "earliest_sampled_label": "Q",
+    "earliest_sampled_record_index": 65,
+    "conservative_saved_disclosures": 0,
+    "terminal_reproduced": true,
+    "labelled_outcomes": [
+      {
+        "label": "floor_3Q_over_4",
+        "q": 612,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "floor_9Q_over_10",
+        "q": 734,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "floor_19Q_over_20",
+        "q": 775,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "floor_99Q_over_100",
+        "q": 807,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "Q_minus_1",
+        "q": 815,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "Q",
+        "q": 816,
+        "singleton": "preference_dependence",
+        "augmented": "preference_dependence"
+      }
+    ],
+    "interpretation": "earliest sampled certificate, not the first possible stopping time"
+  },
+  {
+    "seed": 1,
+    "policy": "random_task_blocks",
+    "task_mass_units": 4,
+    "Q": 726,
+    "trace_sha256": "a8486e7e832dd17b368cd6aed8c637587cc04ffbf689062f88eb9dd6515b7051",
+    "earliest_sampled_augmented_q": 726,
+    "earliest_sampled_label": "Q",
+    "earliest_sampled_record_index": 71,
+    "conservative_saved_disclosures": 0,
+    "terminal_reproduced": true,
+    "labelled_outcomes": [
+      {
+        "label": "floor_3Q_over_4",
+        "q": 544,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "floor_9Q_over_10",
+        "q": 653,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "floor_19Q_over_20",
+        "q": 689,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "floor_99Q_over_100",
+        "q": 718,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "Q_minus_1",
+        "q": 725,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "Q",
+        "q": 726,
+        "singleton": "preference_dependence",
+        "augmented": "preference_dependence"
+      }
+    ],
+    "interpretation": "earliest sampled certificate, not the first possible stopping time"
+  },
+  {
+    "seed": 1,
+    "policy": "cheapest_remaining",
+    "task_mass_units": 2,
+    "Q": 816,
+    "trace_sha256": "c75aa7e3acddc3130fc92f60837a619d25690887b9b9bf8b20bab3e3caa26e11",
+    "earliest_sampled_augmented_q": 816,
+    "earliest_sampled_label": "Q",
+    "earliest_sampled_record_index": 77,
+    "conservative_saved_disclosures": 0,
+    "terminal_reproduced": true,
+    "labelled_outcomes": [
+      {
+        "label": "floor_3Q_over_4",
+        "q": 612,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "floor_9Q_over_10",
+        "q": 734,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "floor_19Q_over_20",
+        "q": 775,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "floor_99Q_over_100",
+        "q": 807,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "Q_minus_1",
+        "q": 815,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "Q",
+        "q": 816,
+        "singleton": "preference_dependence",
+        "augmented": "preference_dependence"
+      }
+    ],
+    "interpretation": "earliest sampled certificate, not the first possible stopping time"
+  },
+  {
+    "seed": 1,
+    "policy": "cheapest_remaining",
+    "task_mass_units": 4,
+    "Q": 726,
+    "trace_sha256": "be6a3be9282cdf85a63b953ae859c858b1e5495df4e9de9a437abbdd3a4e8482",
+    "earliest_sampled_augmented_q": 726,
+    "earliest_sampled_label": "Q",
+    "earliest_sampled_record_index": 83,
+    "conservative_saved_disclosures": 0,
+    "terminal_reproduced": true,
+    "labelled_outcomes": [
+      {
+        "label": "floor_3Q_over_4",
+        "q": 544,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "floor_9Q_over_10",
+        "q": 653,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "floor_19Q_over_20",
+        "q": 689,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "floor_99Q_over_100",
+        "q": 718,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "Q_minus_1",
+        "q": 725,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "Q",
+        "q": 726,
+        "singleton": "preference_dependence",
+        "augmented": "preference_dependence"
+      }
+    ],
+    "interpretation": "earliest sampled certificate, not the first possible stopping time"
+  },
+  {
+    "seed": 1,
+    "policy": "decision_gap",
+    "task_mass_units": 2,
+    "Q": 816,
+    "trace_sha256": "c75aa7e3acddc3130fc92f60837a619d25690887b9b9bf8b20bab3e3caa26e11",
+    "earliest_sampled_augmented_q": 816,
+    "earliest_sampled_label": "Q",
+    "earliest_sampled_record_index": 89,
+    "conservative_saved_disclosures": 0,
+    "terminal_reproduced": true,
+    "labelled_outcomes": [
+      {
+        "label": "floor_3Q_over_4",
+        "q": 612,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "floor_9Q_over_10",
+        "q": 734,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "floor_19Q_over_20",
+        "q": 775,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "floor_99Q_over_100",
+        "q": 807,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "Q_minus_1",
+        "q": 815,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "Q",
+        "q": 816,
+        "singleton": "preference_dependence",
+        "augmented": "preference_dependence"
+      }
+    ],
+    "interpretation": "earliest sampled certificate, not the first possible stopping time"
+  },
+  {
+    "seed": 1,
+    "policy": "decision_gap",
+    "task_mass_units": 4,
+    "Q": 726,
+    "trace_sha256": "be6a3be9282cdf85a63b953ae859c858b1e5495df4e9de9a437abbdd3a4e8482",
+    "earliest_sampled_augmented_q": 726,
+    "earliest_sampled_label": "Q",
+    "earliest_sampled_record_index": 95,
+    "conservative_saved_disclosures": 0,
+    "terminal_reproduced": true,
+    "labelled_outcomes": [
+      {
+        "label": "floor_3Q_over_4",
+        "q": 544,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "floor_9Q_over_10",
+        "q": 653,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "floor_19Q_over_20",
+        "q": 689,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "floor_99Q_over_100",
+        "q": 718,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "Q_minus_1",
+        "q": 725,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "Q",
+        "q": 726,
+        "singleton": "preference_dependence",
+        "augmented": "preference_dependence"
+      }
+    ],
+    "interpretation": "earliest sampled certificate, not the first possible stopping time"
+  },
+  {
+    "seed": 2,
+    "policy": "random_fold",
+    "task_mass_units": 2,
+    "Q": 816,
+    "trace_sha256": "e8d76303a9dd04e3431fd0b831df0f00c9c4c3c1b79cd84d8605837aa75e13ea",
+    "earliest_sampled_augmented_q": 816,
+    "earliest_sampled_label": "Q",
+    "earliest_sampled_record_index": 101,
+    "conservative_saved_disclosures": 0,
+    "terminal_reproduced": true,
+    "labelled_outcomes": [
+      {
+        "label": "floor_3Q_over_4",
+        "q": 612,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "floor_9Q_over_10",
+        "q": 734,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "floor_19Q_over_20",
+        "q": 775,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "floor_99Q_over_100",
+        "q": 807,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "Q_minus_1",
+        "q": 815,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "Q",
+        "q": 816,
+        "singleton": "preference_dependence",
+        "augmented": "preference_dependence"
+      }
+    ],
+    "interpretation": "earliest sampled certificate, not the first possible stopping time"
+  },
+  {
+    "seed": 2,
+    "policy": "random_fold",
+    "task_mass_units": 4,
+    "Q": 812,
+    "trace_sha256": "7964266d1bcf98950af1d2106b5aa5edf51f71a4433638598e01f17d771ff2ea",
+    "earliest_sampled_augmented_q": 812,
+    "earliest_sampled_label": "Q",
+    "earliest_sampled_record_index": 107,
+    "conservative_saved_disclosures": 0,
+    "terminal_reproduced": true,
+    "labelled_outcomes": [
+      {
+        "label": "floor_3Q_over_4",
+        "q": 609,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "floor_9Q_over_10",
+        "q": 730,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "floor_19Q_over_20",
+        "q": 771,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "floor_99Q_over_100",
+        "q": 803,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "Q_minus_1",
+        "q": 811,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "Q",
+        "q": 812,
+        "singleton": "preference_dependence",
+        "augmented": "preference_dependence"
+      }
+    ],
+    "interpretation": "earliest sampled certificate, not the first possible stopping time"
+  },
+  {
+    "seed": 2,
+    "policy": "random_task_blocks",
+    "task_mass_units": 2,
+    "Q": 816,
+    "trace_sha256": "0d07ac909c3ca72a873a5493d3be974d8a643c34aa4a569c224a3546e577ba93",
+    "earliest_sampled_augmented_q": 816,
+    "earliest_sampled_label": "Q",
+    "earliest_sampled_record_index": 113,
+    "conservative_saved_disclosures": 0,
+    "terminal_reproduced": true,
+    "labelled_outcomes": [
+      {
+        "label": "floor_3Q_over_4",
+        "q": 612,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "floor_9Q_over_10",
+        "q": 734,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "floor_19Q_over_20",
+        "q": 775,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "floor_99Q_over_100",
+        "q": 807,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "Q_minus_1",
+        "q": 815,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "Q",
+        "q": 816,
+        "singleton": "preference_dependence",
+        "augmented": "preference_dependence"
+      }
+    ],
+    "interpretation": "earliest sampled certificate, not the first possible stopping time"
+  },
+  {
+    "seed": 2,
+    "policy": "random_task_blocks",
+    "task_mass_units": 4,
+    "Q": 738,
+    "trace_sha256": "19e29746b144db74bc037674ba4c0ffcf3c4aee543385a7675d4048b3cc46244",
+    "earliest_sampled_augmented_q": 738,
+    "earliest_sampled_label": "Q",
+    "earliest_sampled_record_index": 119,
+    "conservative_saved_disclosures": 0,
+    "terminal_reproduced": true,
+    "labelled_outcomes": [
+      {
+        "label": "floor_3Q_over_4",
+        "q": 553,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "floor_9Q_over_10",
+        "q": 664,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
+      {
+        "label": "floor_19Q_over_20",
+        "q": 701,
+        "singleton": "unresolved",
+        "augmented": "unresolved"
+      },
