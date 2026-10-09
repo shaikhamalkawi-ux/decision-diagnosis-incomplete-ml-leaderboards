@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use these reproducibility materials, please cite the associated manuscript."
+title: "A Decision-Diagnostic Framework for Incomplete Machine Learning Leaderboards: Evidence Ambiguity versus Certificate Failure under Task Reweighting — Reproducibility Materials"
+type: software
+authors:
+  - family-names: "Malkawi"
+    given-names: "Ghassan"
+  - family-names: "Elsayed"
+    given-names: "Ahmed"
+  - family-names: "Alhagyan"
+    given-names: "Mohammed"
+  - family-names: "Hussein"
+    given-names: "Bakeel"
+repository-code: "https://github.com/shaikhamalkawi-ux/decision-diagnosis-incomplete-ml-leaderboards"
+keywords:
+  - machine-learning evaluation
+  - decision diagnosis
+  - incomplete benchmarks
+  - task reweighting
+  - reproducibility
