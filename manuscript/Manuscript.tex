@@ -1,5 +1,6 @@
 \documentclass[preprint,11pt]{elsarticle}
 \usepackage{amsmath,amssymb,amsthm}
+\usepackage{chngcntr}
 \usepackage{booktabs,array}
 \usepackage{graphicx}
 \usepackage{float}
@@ -196,7 +197,7 @@ If such a $\mu_i$ exists for every candidate, then every compatible completion h
 There exists a bounded whole-fold disclosure state with four methods labeled A--D and four tasks, exact arithmetic means, exact normalized midranks, nominal weights $p=(21,21,21,5)/68$, and $\varepsilon=13/400$ such that every compatible completion has no common weak winner, yet no completion-independent joint mixture satisfies the certificate for candidate A.
 \end{theorem}
 
-The construction uses one partially observed task and three fully observed tasks, with all raw losses in $[0,1]$. The uncertain task admits six possible normalized-rank patterns. Every legal completion excludes all four candidates from common-weak-winner status, but two legal completions have an averaged rank-gap table whose support values for A against each rival are all negative. By linearity, any completion-independent mixture fails on at least one of those completions. The obstruction is a convexification effect. Detailed derivations and exact verification checks are provided in Supplementary Sections S3--S4.
+The construction uses one partially observed task and three fully observed tasks, with all raw losses in $[0,1]$. The uncertain task admits six possible normalized-rank patterns. Every legal completion excludes all four candidates from common-weak-winner status, but two legal completions have an averaged rank-gap table whose support values for A against each rival are all negative. By linearity, any completion-independent mixture fails on at least one of those completions. The obstruction is a convexification effect. Detailed derivations and exact verification checks are provided in Appendices~\ref{app:fourtask}--\ref{app:uniform}.
 
 \begin{theorem}[Uniform-center obstruction with independent unknown folds]\label{thm:uniform}
 There exists a bounded whole-fold disclosure state with four methods labeled A--D, 68 tasks, uniform nominal weights $u=(1/68,\ldots,1/68)$, $\varepsilon=13/400$, exact means, exact normalized midranks, and independently admissible unknown fold vectors such that every compatible completion has no common weak winner, but no completion-independent joint mixture satisfies the certificate for candidate A.
@@ -204,7 +205,7 @@ There exists a bounded whole-fold disclosure state with four methods labeled A--
 
 The 68 tasks form four blocks of sizes 21, 21, 21, and 5. The first block contains 21 independently incomplete tasks and the other 47 tasks are fully known. The proof covers heterogeneous assignments of the six possible uncertain rank-row types; it does not assume identical completions across tasks. Two synchronized completions are used only as obstruction witnesses.
 
-Permuting the 21 uncertain tasks preserves the uniform TV ball and every ordered-pair support. Weak compositions into six row types reduce the $6^{21}$ rank tables to $\binom{26}{5}=65{,}780$ canonical states. Exact integer transport and a separate rational-arithmetic implementation agree on 789,360 ordered support comparisons. All 63 nonempty type subsets satisfy the required support conditions. A fresh replay of the archived verification materials on a different Python minor version reproduced the verification result. Supplementary Section S4 records the symmetry reduction and exact-check scope.
+Permuting the 21 uncertain tasks preserves the uniform TV ball and every ordered-pair support. Weak compositions into six row types reduce the $6^{21}$ rank tables to $\binom{26}{5}=65{,}780$ canonical states. Exact integer transport and a separate rational-arithmetic implementation agree on 789,360 ordered support comparisons. All 63 nonempty type subsets satisfy the required support conditions. A fresh replay of the archived verification materials on a different Python minor version reproduced the verification result. Appendix~\ref{app:uniform} records the symmetry reduction and exact-check scope.
 
 \section{Empirical evaluation on TabArena}
 
@@ -283,7 +284,7 @@ Thus 47/80 = 58.75\% of the fixed pre-stopping prefixes have an explicit opposit
 \label{fig:witness_radius}
 \end{figure}
 
-The remaining 33 traces are inconclusive because failure to find an opposite-answer witness does not establish semantic agreement. Supplementary Section S6 and Table S1 provide the witness construction and ledger.
+The remaining 33 traces are inconclusive because failure to find an opposite-answer witness does not establish semantic agreement. Appendix~\ref{app:witness} records the witness construction and trace-level decision-point ledger.
 
 \subsection{Result 3: conditional fixed-trace decision-point match}
 
@@ -291,17 +292,17 @@ For a fixed disclosure order, let $h_q$ denote the prefix containing the first $
 \begin{equation}\label{eq:qstar}
 q^\star=\min\left\{q:\mathcal D(X)\text{ is constant over all }X\in\mathcal X(h_q)\right\}.
 \end{equation}
-For every one of the 47 traces with a verified opposite-answer pair at $Q-1$, semantic resolution is impossible at $Q-1$ and at every earlier prefix of the same disclosure order, because the same two completions remain compatible when fewer observations are disclosed. The verified certificate at $Q$ provides the matching upper bound. The archived verification record therefore establishes a conditional fixed-trace lower/upper match on all 47 witnessed traces: $q^\star=Q$, subject to the original finite-well-defined-target scope and the numerical mean-enclosure qualification of the $Q$ certificate. Supplementary Table S2 reports these matches by disclosure policy and TV radius.
+For every one of the 47 traces with a verified opposite-answer pair at $Q-1$, semantic resolution is impossible at $Q-1$ and at every earlier prefix of the same disclosure order, because the same two completions remain compatible when fewer observations are disclosed. The verified certificate at $Q$ provides the matching upper bound. The archived verification record therefore establishes a conditional fixed-trace lower/upper match on all 47 witnessed traces: $q^\star=Q$, subject to the original finite-well-defined-target scope and the numerical mean-enclosure qualification of the $Q$ certificate. Appendix~\ref{app:witness} reports these matches by disclosure policy and TV radius.
 
 This is a fixed-order information statement, not an optimization over alternative disclosure orders. On these 47 traces, it distinguishes lack of earlier stopping caused by insufficient information from lack of earlier stopping caused by the tested certificate family.
 
 \subsection{Verification of the real-data witnesses}
 
-OpenAI ChatGPT and Codex assisted author-supervised code development and review. They were not used as independent decision-makers for reported labels or claims; numerical and logical results were retained only after the explicit verification checks described here and in the supplementary material.
+OpenAI ChatGPT and Codex assisted author-supervised code development and review. They were not used as independent decision-makers for reported labels or claims; numerical and logical results were retained only after the explicit verification checks described here and in Appendix~\ref{app:witness}.
 
 The second completion rule was checked by a separately implemented verifier. Across all retained candidate completions, it checked agreement on disclosed values, declared score domains, mean-enclosure bounds, valid rank values, and file digests. The verification record contains 14,560 candidate support comparisons and 364 comparisons against the archived completion, together with per-task recipe and exact-tie diagnostics. Exact integer support signs determine acceptance; numerical linear-programming solves are diagnostic rather than the source of the logical label.
 
-Because the verifier reuses the same parser and aggregation routines as the analysis, it serves as an implementation cross-check. Supplementary Section S7 records the verification scope and checks.
+Because the verifier reuses the same parser and aggregation routines as the analysis, it serves as an implementation cross-check. Appendix~\ref{app:witness} records the verification scope and checks.
 
 \subsection{Diagnostic interpretation}
 
@@ -352,13 +353,125 @@ Incomplete machine-learning leaderboards can fail to support a decision for logi
 
 The practical implication is to diagnose the source of uncertainty before spending more benchmark-evaluation effort. If compatible completions disagree, more evidence or stronger assumptions are required. If the decision is proved fixed and the declared certificate family is proved insufficient, the appropriate target is richer reasoning. If neither condition is established, the system should report uncertainty. An unresolved leaderboard should therefore not be treated as synonymous with an under-evaluated leaderboard.
 
+
+\appendix
+\counterwithin{equation}{section}
+\counterwithin{figure}{section}
+\counterwithin{table}{section}
+\renewcommand{\theequation}{\Alph{section}.\arabic{equation}}
+\renewcommand{\thefigure}{\Alph{section}.\arabic{figure}}
+\renewcommand{\thetable}{\Alph{section}.\arabic{table}}
+
+\section{Detailed proof of the four-task obstruction}\label{app:fourtask}
+The nonuniform construction in Theorem~\ref{thm:nonuniform} uses four methods labeled A--D and four tasks, nominal task weights $p=(21,21,21,5)/68$, and $\varepsilon=13/400$. One task is partially observed and three are fully observed. All raw losses lie in $[0,1]$, aggregation is the exact arithmetic mean, and ties use exact normalized midranks.
+
+For the uncertain task, write the normalized ranks of B, C, and D as $(r_B,r_C,r_D)$ while A has rank 1. The six feasible triples are
+\begin{equation}\label{eq:app_types}
+(0,\tfrac13,\tfrac23),\;(\tfrac13,0,\tfrac23),\;(\tfrac16,\tfrac16,\tfrac23),\;(0,\tfrac12,\tfrac12),\;(\tfrac12,0,\tfrac12),\;(\tfrac13,\tfrac13,\tfrac13).
+\end{equation}
+All are realizable by the declared closed mean intervals. In every row, $r_B+r_C+r_D=1$ and $r_D\ge 1/3$.
+
+To exclude A in every completion at the nominal weights, define $g=(1-r_B,1-r_C,1-r_D)$ and $t=(5/6,2/3,1/2)$. The three A-minus-rival nominal gaps are
+\begin{equation}\label{eq:app_vj}
+v_j=\frac{21}{68}(g_j-t_j)-\frac{5}{102}.
+\end{equation}
+Both $g$ and $t$ sum to 2, but $t$ is not one of the feasible $g$ vectors and all feasible coordinates lie on the $1/6$ lattice. Hence some coordinate satisfies $g_j-t_j\ge 1/6$, which gives
+\begin{equation}\label{eq:app_A_margin}
+\max_j v_j\ge \frac{21}{68\cdot6}-\frac{5}{102}=\frac1{408}>0.
+\end{equation}
+Thus A is excluded in every legal completion.
+
+Each of B, C, and D is excluded by a feasible TV transfer of mass $\varepsilon=13/400$. The largest possible A-minus-rival gaps after the stated transfers are, respectively,
+\begin{equation}\label{eq:app_nonA_gaps}
+-\frac{211}{4080},\qquad -\frac{1}{4080},\qquad -\frac{211}{4080},
+\end{equation}
+so every non-A candidate is strictly defeated by A somewhere in the admissible TV neighborhood. Therefore every compatible completion has no common weak winner.
+
+To show that no completion-independent joint mixture can uniformly exclude A, consider two legal uncertain-task mean rows $z_1=(3/4,0,1/8,1/4)$ and $z_2=(3/4,1/4,1/4,1/4)$. On the arithmetic average of their rank tables, the maximum A-minus-rival supports over the TV neighborhood are
+\begin{equation}\label{eq:app_convex_supports}
+-\frac{11}{40800},\qquad -\frac{29}{5100},\qquad -\frac{11}{40800}
+\end{equation}
+for B, C, and D. For any fixed probability mixture $\mu$ over admissible $(w,j)$ actions, linearity of the payoff in the rank table implies
+\begin{equation}\label{eq:app_mixture}
+\frac{F_\mu(z_1)+F_\mu(z_2)}2<0.
+\end{equation}
+At least one of the two legal completions must consequently have $F_\mu(z)<0$. Hence no fixed completion-independent mixture succeeds on every compatible completion, even though the semantic no-common-weak-winner decision has already been proved for every completion. The convexified average is used only in the impossibility argument; it is not assumed to be a realizable raw completion.
+
+The public proof and replay materials record the corresponding exact-evidence and machine-audit artifacts; the proof uses only the declared synthetic construction and exact/rational checks.
+
+\section{Uniform 68-task construction and exact verification}\label{app:uniform}
+The stronger construction in Theorem~\ref{thm:uniform} uses four methods labeled A--D, 68 equally weighted tasks, and $\varepsilon=13/400$. The tasks form four blocks of sizes 21, 21, 21, and 5. The first block contains 21 independently incomplete tasks; the remaining 47 tasks are fully known. Each uncertain task can take one of six feasible rank-row types. Figure~\ref{fig:app_structure} shows the block structure and symmetry reduction.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[font=\footnotesize]
+\def\h{1.70}
+\draw[thick] (0,0) rectangle (3.5,\h);
+\draw[thick] (3.5,0) rectangle (7.0,\h);
+\draw[thick] (7.0,0) rectangle (10.5,\h);
+\draw[thick] (10.5,0) rectangle (11.9,\h);
+\node[align=center,text width=3.2cm] at (1.75,0.85) {21 independently incomplete tasks\\6 rank-row types per task};
+\node[align=center,text width=3.1cm] at (5.25,0.85) {21 fully known tasks};
+\node[align=center,text width=3.1cm] at (8.75,0.85) {21 fully known tasks};
+\node[align=center,text width=1.2cm] at (11.2,0.85) {5 fully\\known};
+\draw[<->] (0,2.05)--(3.5,2.05) node[midway,fill=white,inner sep=1pt]{Uncertain block};
+\draw[<->] (3.5,2.05)--(11.9,2.05) node[midway,fill=white,inner sep=1pt]{Known blocks};
+\node[align=center,text width=12.1cm] at (5.95,-0.95) {Permutation symmetry: $6^{21}$ assignments $\rightarrow \binom{26}{5}=65{,}780$ canonical states $\rightarrow 65{,}780\times12=789{,}360$ ordered support checks.\\The completion domain permits heterogeneous assignments across uncertain tasks; synchronized completions are used only as obstruction witnesses.};
+\end{tikzpicture}
+\caption{Structure of the 68-task uniform construction. The first 21 tasks are independently incomplete and each admits one of six feasible uncertain rank-row types. Permutation symmetry reduces the full $6^{21}$ assignment space to $\binom{26}{5}=65{,}780$ canonical states, and each state contributes 12 ordered candidate--rival support checks, yielding $789{,}360$ checks in total.}
+\label{fig:app_structure}
+\end{figure}
+
+The completion domain permits heterogeneous assignments across the 21 uncertain tasks. Synchronized uncertain tasks are used only to exhibit obstruction witnesses and are not imposed on the completion domain. Because the nominal center is uniform, permuting the 21 uncertain tasks preserves every ordered-pair support. The $6^{21}$ possible rank tables therefore reduce to the weak compositions of 21 items into six types, giving $\binom{26}{5}=65{,}780$ canonical states.
+
+The independent exact checker evaluates 12 ordered candidate--rival comparisons for each canonical state,
+\begin{equation}\label{eq:app_checks}
+65{,}780\times12=789{,}360\text{ ordered support comparisons.}
+\end{equation}
+All 63 nonempty subsets of the six uncertain row types were also checked. Exact integer transport and a separate rational-arithmetic implementation agree on the support signs. A fresh replay on Python 3.13.5 reproduced the same verification outcome obtained previously on Python 3.12.14. The archived uniform-construction verification artifact used in that replay has SHA-256 \url{ca61a164846342f5489cbbf3c9f068b3d1d76e8314ff549f46288b57de6fcd50}.
+
+\section{Real-data witness ledger and fixed-trace verification}\label{app:witness}
+For each empirical trace, $Q$ is the recorded stopping disclosure count and the information-limitation analysis examines $Q-1$. The archived completion supplies one decision label. Constructed completions use only disclosed observations and the declared score domains; the actual unseen fold values and unseen decision label are not inputs to the construction.
+
+The initial constant-fill recipe supplied witnesses on 36 of 80 traces. A second prespecified equalization-based recipe retained all 36 and raised the total to 47. The second rule evaluated 14 candidate completions per trace across all 80 traces, yielding 1,120 candidate-completion trials. Table~\ref{tab:app_qmatch} reports the fixed-trace $q^\star=Q$ matches by disclosure policy and TV radius.
+
+\begin{table}[H]
+\centering
+\caption{Conditional fixed-trace decision-point matches by disclosure policy and TV radius. A match combines a verified ambiguity witness at $Q-1$ with the verified stopping-prefix certificate at $Q$.}
+\label{tab:app_qmatch}
+\footnotesize
+\begin{tabular}{lrrr}
+\toprule
+Disclosure policy & TV radius & Traces & $q^\star=Q$ matches\\
+\midrule
+Random fold & $2/51$ & 10 & 10\\
+Random fold & $4/51$ & 10 & 1\\
+Random task blocks & $2/51$ & 10 & 9\\
+Random task blocks & $4/51$ & 10 & 3\\
+Cheapest remaining & $2/51$ & 10 & 10\\
+Cheapest remaining & $4/51$ & 10 & 2\\
+Decision gap & $2/51$ & 10 & 10\\
+Decision gap & $4/51$ & 10 & 2\\
+\midrule
+Total & --- & 80 & 47\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+For the same fixed disclosure order, the verified opposite-answer pair at $Q-1$ gives $q^\star>Q-1$. The verified certificate at $Q$ gives $q^\star\le Q$, subject to the finite-well-defined-target scope and the numerical mean-enclosure qualification. Hence all 47 successful witness traces satisfy the conditional fixed-trace match $q^\star=Q$. This statement does not compare alternative query orders.
+
+A separately implemented verifier checked agreement on disclosed values, declared score domains, mean-enclosure bounds, valid rank values, exact-tie handling, and file digests. The verification record contains 14,560 candidate support comparisons and 364 comparisons against the archived completion. Exact integer support signs determine witness acceptance; numerical linear-programming solves are diagnostic. Because the verifier reuses the same parser and aggregation routines as the analysis, it is an implementation cross-check rather than an independent replication.
+
+The public repository at \url{https://github.com/shaikhamalkawi-ux/decision-diagnosis-incomplete-ml-leaderboards} contains the diagnostic procedure, detailed proof materials, result summaries, the fixed-trace verifier and summary, figure-reproduction code, and provenance notes. Third-party raw TabArena artifacts are not redistributed where redistribution rights are unclear; retrieval and provenance information are supplied instead.
+
+
 \section*{Declaration of generative AI and AI-assisted technologies in the manuscript preparation process}
 During the preparation of this work, the authors used OpenAI ChatGPT and Codex to assist with literature searching, manuscript organization and language editing, code development and review, and reproducibility checks. After using these tools, the authors reviewed and edited the content as needed and take full responsibility for the content of the publication.
 
 \section*{Data and reproducibility materials availability}
 Reproducibility materials are publicly available at the following repository:\\
 \url{https://github.com/shaikhamalkawi-ux/decision-diagnosis-incomplete-ml-leaderboards}.\\
-The repository includes detailed proof materials for the exact obstruction constructions, exact-case evidence, executable verification code and tests, the diagnostic procedure, witness summaries, and the fixed-trace $q^\star=Q$ verification summary. Supplementary Section S9 lists the reproducibility inventory. Third-party raw TabArena artifacts are not redistributed where redistribution rights are unclear; provenance and retrieval instructions are provided instead. Dataset and benchmark provenance are documented following the transparency and reproducibility principles emphasized in \cite{r25,r26}.
+The repository includes detailed proof materials for the exact obstruction constructions, exact-case evidence, executable verification code and tests, the diagnostic procedure, witness summaries, and the fixed-trace $q^\star=Q$ verification summary. Third-party raw TabArena artifacts are not redistributed where redistribution rights are unclear; provenance and retrieval instructions are provided instead. Dataset and benchmark provenance are documented following the transparency and reproducibility principles emphasized in \cite{r25,r26}.
 
 \begin{thebibliography}{99}
 \bibitem{r1} A. Himmi, E. Irurozki, N. Noiry, S. Cl\'emen\c{c}on and P. Colombo, Towards More Robust NLP System Evaluation: Handling Missing Scores in Benchmarks, in Findings of the Association for Computational Linguistics: EMNLP 2024 (2024), pp. 11759--11785, \url{https://doi.org/10.18653/v1/2024.findings-emnlp.688}.
