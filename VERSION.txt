@@ -1,0 +1,7 @@
+Active manuscript version: G2_KBS_Decision_Diagnostic_Leaderboards_V12
+Date: 2026-10-09
+
+Versioning rule:
+- Increment by exactly one for each subsequent submission-facing revision: V13, V14, V15, ...
+- Do not use R1/R2/Final2/Revised suffixes.
+- V12 is a naming-normalization successor to the integrated-appendix V11R6 baseline; science is unchanged in this step.
