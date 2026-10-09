@@ -41,7 +41,7 @@ A failed witness search is not treated as proof of agreement, and a failed certi
 
 ## Repository structure
 
-- `manuscript/` — current LaTeX manuscript and supplementary source used for the KBS submission candidate.
+- `manuscript/` — current LaTeX manuscript source and Highlights. Technical proof and witness material is integrated as Appendices A-C; there is no separate Supplementary Material file in the active submission candidate.
 - `code/` — exact-obstruction replay, figure generation, and fixed-trace verification scripts.
 - `proofs/` — explicit analytical proof details.
 - `data/` — admitted-scope and provenance notes for the TabArena analysis.
@@ -73,6 +73,10 @@ Figure-generation scripts are included in `code/`.
 ## Citation
 
 Citation metadata are provided in `CITATION.cff`.
+
+## Active manuscript structure
+
+The KBS submission candidate is self-contained: the former supplementary proof and witness material has been consolidated into Appendices A-C of the main manuscript. Reproducibility code, exact proof records, result summaries, and verification artifacts remain in this repository.
 
 ## Permanent archive
 
