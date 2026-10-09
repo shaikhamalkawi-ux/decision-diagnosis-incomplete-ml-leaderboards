@@ -296,9 +296,9 @@ For every one of the 47 traces with a verified opposite-answer pair at $Q-1$, se
 
 This is a fixed-order information statement, not an optimization over alternative disclosure orders. On these 47 traces, it distinguishes lack of earlier stopping caused by insufficient information from lack of earlier stopping caused by the tested certificate family.
 
-\subsection{Verification of the real-data witnesses}
+\subsection{Verification of the real-data witnesses}\label{sec:verification}
 
-OpenAI ChatGPT and Codex assisted author-supervised code development and review. They were not used as independent decision-makers for reported labels or claims; numerical and logical results were retained only after the explicit verification checks described here and in Appendix~\ref{app:witness}.
+OpenAI ChatGPT and Codex were used as author-supervised coding assistants for code development, review, and reproducibility checks. No AI output was used as study data or as an independent decision rule for reported labels or claims; all retained numerical and logical results were accepted only after the explicit verification checks described here and in Appendix~\ref{app:witness}.
 
 The second completion rule was checked by a separately implemented verifier. Across all retained candidate completions, it checked agreement on disclosed values, declared score domains, mean-enclosure bounds, valid rank values, and file digests. The verification record contains 14,560 candidate support comparisons and 364 comparisons against the archived completion, together with per-task recipe and exact-tie diagnostics. Exact integer support signs determine acceptance; numerical linear-programming solves are diagnostic rather than the source of the logical label.
 
@@ -337,7 +337,7 @@ For benchmark practitioners, the framework acts as a decision-support layer arou
 
 The zero-savings result shows that greater certificate expressiveness and lower evaluation effort are distinct objectives. In this study, the tested stronger family improves diagnostic interpretation rather than stopping time. For the 47 witnessed traces, the fixed-trace result $q^\star=Q$ goes further: under the recorded disclosure order and stated numerical scope, no sound procedure using the same evidence and assumptions can resolve the decision before $Q$.
 
-The radius split is descriptive. Opposite-answer witnesses are found on 39 of 40 traces at $\varepsilon=2/51$ but only 8 of 40 at $\varepsilon=4/51$. Because the traces overlap within one archive, the contrast is not a statistical effect estimate. It shows that the geometry of the task-weight neighborhood materially changes which partial transcripts can be certified as ambiguous.
+The radius split is descriptive. Opposite-answer witnesses are found on 39 of 40 traces at $\varepsilon=2/51$ but only 8 of 40 at $\varepsilon=4/51$. Because the traces overlap within one archive, the contrast is not a statistical effect estimate. Moreover, the stopping prefix associated with a trace can differ across radii, so the observed difference should not be interpreted as the isolated causal effect of $\varepsilon$; it is reported only as a radius-specific descriptive contrast.
 
 \section{Limitations}
 
@@ -397,7 +397,7 @@ for B, C, and D. For any fixed probability mixture $\mu$ over admissible $(w,j)$
 \end{equation}
 At least one of the two legal completions must consequently have $F_\mu(z)<0$. Hence no fixed completion-independent mixture succeeds on every compatible completion, even though the semantic no-common-weak-winner decision has already been proved for every completion. The convexified average is used only in the impossibility argument; it is not assumed to be a realizable raw completion.
 
-The public proof and replay materials record the corresponding exact-evidence and machine-audit artifacts; the proof uses only the declared synthetic construction and exact/rational checks.
+The public proof and replay materials provide the corresponding exact-rational verification artifacts; the proof itself uses only the declared synthetic construction and exact arithmetic.
 
 \section{Uniform 68-task construction and exact verification}\label{app:uniform}
 The stronger construction in Theorem~\ref{thm:uniform} uses four methods labeled A--D, 68 equally weighted tasks, and $\varepsilon=13/400$. The tasks form four blocks of sizes 21, 21, 21, and 5. The first block contains 21 independently incomplete tasks; the remaining 47 tasks are fully known. Each uncertain task can take one of six feasible rank-row types. Figure~\ref{fig:app_structure} shows the block structure and symmetry reduction.
@@ -428,7 +428,7 @@ The independent exact checker evaluates 12 ordered candidate--rival comparisons 
 \begin{equation}\label{eq:app_checks}
 65{,}780\times12=789{,}360\text{ ordered support comparisons.}
 \end{equation}
-All 63 nonempty subsets of the six uncertain row types were also checked. Exact integer transport and a separate rational-arithmetic implementation agree on the support signs. A fresh replay on Python 3.13.5 reproduced the same verification outcome obtained previously on Python 3.12.14. The archived uniform-construction verification artifact used in that replay has SHA-256 \url{ca61a164846342f5489cbbf3c9f068b3d1d76e8314ff549f46288b57de6fcd50}.
+All 63 nonempty subsets of the six uncertain row types were also checked. Exact integer transport and a separate rational-arithmetic implementation agree on the support signs. A fresh replay on Python 3.13.5 reproduced the same verification outcome obtained previously on Python 3.12.14. The archived uniform-construction verification artifact used in that replay has SHA-256 \texttt{ca61a164846342f5489cbbf3c9f068b3\allowbreak d1d76e8314ff549f46288b57de6fcd50}.
 
 \section{Real-data witness ledger and fixed-trace verification}\label{app:witness}
 For each empirical trace, $Q$ is the recorded stopping disclosure count and the information-limitation analysis examines $Q-1$. The archived completion supplies one decision label. Constructed completions use only disclosed observations and the declared score domains; the actual unseen fold values and unseen decision label are not inputs to the construction.
@@ -462,16 +462,14 @@ For the same fixed disclosure order, the verified opposite-answer pair at $Q-1$ 
 
 A separately implemented verifier checked agreement on disclosed values, declared score domains, mean-enclosure bounds, valid rank values, exact-tie handling, and file digests. The verification record contains 14,560 candidate support comparisons and 364 comparisons against the archived completion. Exact integer support signs determine witness acceptance; numerical linear-programming solves are diagnostic. Because the verifier reuses the same parser and aggregation routines as the analysis, it is an implementation cross-check rather than an independent replication.
 
-The public repository at \url{https://github.com/shaikhamalkawi-ux/decision-diagnosis-incomplete-ml-leaderboards} contains the diagnostic procedure, detailed proof materials, result summaries, the fixed-trace verifier and summary, figure-reproduction code, and provenance notes. Third-party raw TabArena artifacts are not redistributed where redistribution rights are unclear; retrieval and provenance information are supplied instead.
-
 
 \section*{Declaration of generative AI and AI-assisted technologies in the manuscript preparation process}
-During the preparation of this work, the authors used OpenAI ChatGPT and Codex to assist with literature searching, manuscript organization and language editing, code development and review, and reproducibility checks. After using these tools, the authors reviewed and edited the content as needed and take full responsibility for the content of the publication.
+During preparation of this manuscript, the authors used OpenAI ChatGPT and Codex for author-supervised literature-search organization, language editing, code assistance, and reproducibility checks. The research-use role of these tools is described in Section~\ref{sec:verification}. All retained content, code changes, numerical results, and claims were reviewed by the authors, who take full responsibility for the publication.
 
 \section*{Data and reproducibility materials availability}
 Reproducibility materials are publicly available at the following repository:\\
 \url{https://github.com/shaikhamalkawi-ux/decision-diagnosis-incomplete-ml-leaderboards}.\\
-The repository includes detailed proof materials for the exact obstruction constructions, exact-case evidence, executable verification code and tests, the diagnostic procedure, witness summaries, and the fixed-trace $q^\star=Q$ verification summary. Third-party raw TabArena artifacts are not redistributed where redistribution rights are unclear; provenance and retrieval instructions are provided instead. Dataset and benchmark provenance are documented following the transparency and reproducibility principles emphasized in \cite{r25,r26}.
+The repository includes detailed proof materials for the exact obstruction constructions, exact-rational replay code, the diagnostic procedure, publication-facing result summaries, the source ledgers required by the fixed-trace verifier, and machine-readable verification summaries. Third-party raw TabArena artifacts are not redistributed where redistribution rights are unclear; provenance and retrieval instructions are provided instead. Dataset and benchmark provenance are documented following the transparency and reproducibility principles emphasized in \cite{r25,r26}.
 
 \begin{thebibliography}{99}
 \bibitem{r1} A. Himmi, E. Irurozki, N. Noiry, S. Cl\'emen\c{c}on and P. Colombo, Towards More Robust NLP System Evaluation: Handling Missing Scores in Benchmarks, in Findings of the Association for Computational Linguistics: EMNLP 2024 (2024), pp. 11759--11785, \url{https://doi.org/10.18653/v1/2024.findings-emnlp.688}.
