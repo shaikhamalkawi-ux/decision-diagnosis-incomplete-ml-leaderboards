@@ -1,7 +1,7 @@
 from fractions import Fraction as F
 import json
 from pathlib import Path
-ROOT=Path(__file__).resolve().parent.parent
+ROOT=Path(__file__).resolve().parent.parent.parent
 ROWS=[(F(1),F(0),F(1,3),F(2,3)),(F(1),F(1,3),F(0),F(2,3)),(F(1),F(1,6),F(1,6),F(2,3)),(F(1),F(0),F(1,2),F(1,2)),(F(1),F(1,2),F(0),F(1,2)),(F(1),F(1,3),F(1,3),F(1,3))]
 KNOWN=[(F(0),F(1,3),F(2,3),F(1)),(F(1,2),F(1),F(1,2),F(0)),(F(0),F(2,3),F(2,3),F(2,3))]
 P=[F(21,68),F(21,68),F(21,68),F(5,68)];E=F(13,400)
