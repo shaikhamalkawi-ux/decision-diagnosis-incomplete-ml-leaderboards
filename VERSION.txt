@@ -1,7 +1,12 @@
-Active manuscript version: G2_KBS_Decision_Diagnostic_Leaderboards_V13
-Date: 2026-10-09
+Active research manuscript candidate: G2_KBS_Decision_Diagnostic_Leaderboards_V21
+Date: 2026-10-11
+Status: author scientific-review candidate; not a final journal submission.
 
-Versioning rule:
-- Increment by exactly one for each subsequent submission-facing revision: V14, V15, V16, ...
-- Do not use R1/R2/Final2/Revised suffixes.
-- V13 is the Universal Final Pre-Submission Audit closure of V12. The locked scientific results are unchanged; V13 corrects reproducibility packaging and claim-scope wording.
+Scientific ancestry:
+- Original V19 fixed-order TabArena mathematical and empirical benchmark.
+- Separate historical V20 unordered-evidence branch (585 necessary, 756/636 sufficient), now incorporated.
+- V21 adds verified strict-task-rank witnesses and bounded independent BenchPress benchmark-row transfer.
+
+The public code on this branch reproduces the exact four/68-task constructions and 72 BenchPress decision states. It DOES NOT contain restricted TabArena raw fold vectors or source-dependent full trace witnesses. Full V19/V20 replay still requires author-side licensed sources.
+
+Version history and main branch remain preserved. Do not merge until author approval, source rights review and reproduction checks have been reviewed.
