@@ -1,16 +1,22 @@
 {
-  "status": "PASS",
+  "status": "IDENTITY_REPLAY_PASS",
   "records": 80,
   "identity_mismatches": 0,
-  "qstar_equals_Q": 47,
-  "qstar_Q_min": 726,
-  "qstar_Q_median": 816,
-  "qstar_Q_max": 816,
+  "conditional_qstar_Q_matches": 47,
+  "independently_recertified_qstar_equals_Q": null,
+  "terminal_Q_numerical_certificate": "NOT_RECOMPUTED",
+  "terminal_Q_smallest_certified_margin": null,
+  "recorded_Q_min_among_conditional": 726,
+  "recorded_Q_median_among_conditional": 816,
+  "recorded_Q_max_among_conditional": 816,
+  "recorded_Q_eq_816_among_conditional": 31,
+  "recorded_Q_lt_816_among_conditional": 16,
+  "distinct_trace_sha256_among_conditional": 35,
   "qualifications": [
-    "fixed disclosure order only",
-    "finite well-defined canonical targets",
-    "Q upper certificate retains numerical mean-enclosure qualification",
-    "not an optimization over alternative query orders"
+    "Q-1 ambiguity establishes the fixed-order lower bound within the declared completion model",
+    "The Q upper bound depends on original numerical mean-enclosure and finite-target certificate validity",
+    "This public script checks source digest, identity, recorded status and flags, not terminal support inequalities",
+    "No optimizing over alternative disclosure orders or claiming raw fold-score reproduction"
   ],
   "source_sha256": {
     "Phase2_FOLD_RUNS.csv": "8f06784d4a4b2f2449f28eec229b50b558832fd914384671df7e9a3a865d36dc",

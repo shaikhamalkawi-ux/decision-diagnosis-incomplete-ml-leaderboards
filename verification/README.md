@@ -1,4 +1,4 @@
-# Verification and diagnostic scope
+# Verification and diagnostic scope — status replay, not numerical recertification
 
 The exact constructions combine analytical arguments with exact-arithmetic implementation checks. The real-data opposite-answer witnesses are verified against disclosed values, declared score domains, aggregation bounds, valid ranks, exact ties, and file digests.
 
@@ -25,6 +25,8 @@ python code/verify_fixed_trace_qstar.py \
   --output-csv verification/fixed_trace_Q_match_replay.csv
 ```
 
-Expected result: 80 records, 0 identity mismatches in the frozen audit, and `qstar_equals_Q = 47`.
+Expected result: 80 records, 0 identity mismatches, and `conditional_qstar_Q_matches = 47`. The 47 cases have Q-1 ambiguity witnesses, so q* is at least Q for their frozen orders; equality requires the original terminal positive-margin certificate. The public replay does not independently reconstruct mean-enclosure/rounding inequalities at Q.
 
 The implementation checks are reproducibility checks, not blind external replication.
+
+**Current numerical Q-certificate status: NOT RECOMPUTED.** The 364 archived-completion comparisons are a historical operation count, not 364 independent experiments. The original Phase-2 implementation, raw admitted fold losses, numerical margins, and error bounds are required to certify the terminal Q upper step.
