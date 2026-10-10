@@ -33,8 +33,8 @@ A failed witness search is not treated as proof of agreement, and a failed certi
 - 39/40 at epsilon = 2/51;
 - 8/40 at epsilon = 4/51;
 - 33 traces remain inconclusive;
-- fixed-trace decision point q*=Q on the same 47 witnessed traces;
-- Q range among those 47 traces: 726–816 disclosures;
+- 47 recorded conditional fixed-order q*=Q matches, subject to unrecomputed terminal numerical Q certificates;
+- recorded Q range among those 47 traces: 726–816 disclosures (31 at Q=816, 16 earlier; 35 distinct transcript hashes);
 - 1,120 candidate-completion trials;
 - 14,560 candidate support comparisons;
 - 364 archived-completion comparisons.
@@ -50,7 +50,7 @@ A failed witness search is not treated as proof of agreement, and a failed certi
 
 ## Empirical-data boundary
 
-The trace counts are descriptive and are not population-frequency estimates. Logical completions are defined by declared numerical domains and are not claimed to be realizable by retraining the named methods. The fixed-trace q*=Q result is specific to the recorded disclosure order and is not an optimization over alternative query orders.
+The trace counts are descriptive and are not population-frequency estimates. Logical completions are defined by declared numerical domains and are not claimed to be realizable by retraining the named methods. The public ledgers verify Q-1 witnesses and identity-level terminal statuses, not numerical terminal Q margins or directed-rounded enclosures. The resulting q*=Q statement remains conditional, specific to each recorded disclosure order, and is not an optimization over alternative query orders.
 
 Third-party raw TabArena artifacts are not redistributed where redistribution rights are unclear. The repository records scope, provenance, derived summaries, and code needed to inspect the reported claims without republishing restricted third-party raw artifacts.
 
@@ -62,7 +62,7 @@ For the exact synthetic obstruction checks:
 python code/replay_exact_obstructions.py
 ```
 
-For the fixed-trace verification, use the frozen ledgers in `verification/source_ledgers/`; the exact command and source hashes are recorded in `verification/README.md`.
+For frozen **identity/status replay**, use `verification/source_ledgers/` and the command in `verification/README.md`. The public release does not recalculate terminal numerical Q certificates. Corrected provenance and the missing raw-input hash are documented in `data/README.md`.
 
 Figure-generation scripts are included in `code/`.
 
