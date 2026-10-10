@@ -1,14 +1,20 @@
-# G2--KBS V21 public verification (no restricted TabArena rows)
+# G2--KBS V21 verified scientific extension (author-review branch)
 
-Requires Python 3.10+, numpy, pandas. Use the self-contained ZIP from Google Drive for a one-command folder layout. For this GitHub branch, scripts under code/v21 expect data under inputs/; copy the two inputs/v21 CSVs into inputs/ before running (or use the ZIP). From a prepared directory run:
+This branch preserves the historical default branch. It contains an independently executed source-safe numerical subset of V21, not a completed journal submission or a full public release of restricted TabArena inputs.
 
-    python code/v21/replay_four_task_exact.py
-    python code/v21/replay_full_uniform_obstruction_independent.py
-    python code/v21/benchpress_external_diagnostic.py
-    python code/v21/verify_benchpress_diagnostic_independent.py
+From the **repository root** after installing numpy and pandas, run:
 
-Expected: six admissible four-task patterns; 65,780 canonical 68-task states and 789,360 exact candidate-rival supports; 72 BenchPress benchmark-row disclosure cases (64 ambiguity witnesses, 8 positive decision certificates); all checks pass. These are separate source-level checks, not blind independent human replication.
+```bash
+python code/v21/replay_four_task_exact.py
+python code/v21/replay_full_uniform_obstruction_independent.py
+python code/v21/benchpress_external_diagnostic.py
+python code/v21/verify_benchpress_diagnostic_independent.py
+```
 
-The 11x10 `inputs/v21/benchpress_primary_complete_case_scores.csv` and normalized rank matrix are retained from the independently archived source, not a substitution for the current living upstream dataset. BenchPress source Microsoft, Y. Zeng and D. Papailiopoulos (2026), https://huggingface.co/datasets/microsoft/benchpress-score-matrix; dataset license **CDLA-Permissive-2.0**, https://huggingface.co/datasets/microsoft/benchpress-score-matrix/tree/main/data. Source CSV SHA-256 b13854563618794e44dfa9d98e001765b0049cd023613b836964de3be631a605.
+Checks: six four-task admissible rank types; 65,780 states and 789,360 exact comparisons for the 68-task obstruction; 72 BenchPress complete-case benchmark-row disclosure scenarios with 64 explicit opposing decisions and eight conservative certificates (three certified D=0, five certified D=1). A second verifier independently checks all 72.
 
-The original TabArena fold losses, Phase-2/Phase-8 transcript files, private witness score fills, and verification scripts requiring them are absent. Public proof code alone does **not** reproduce the full TabArena 80/80 trace result. This remains conditional on restricted author-side input. No task weights were empirically calibrated and no prospective evaluation savings were observed.
+The 11-by-10 score matrix is from Microsoft's BenchPress source archive; CSV SHA-256 `b13854563618794e44dfa9d98e001765b0049cd023613b836964de3be631a605`. Official data https://huggingface.co/datasets/microsoft/benchpress-score-matrix, **CDLA-Permissive-2.0**, authors Y. Zeng and D. Papailiopoulos (2026).
+
+**Important source boundary:** This branch has no TabArena third-party raw fold scores, no private Q certificates and no new private completion fills. The 80/80 TabArena and 585/756/636 source-gated findings were rerun in a separate restricted author audit; they cannot be reproduced from this public branch alone. It does not claim independent human replication, universal algorithm completeness, reduced evaluation costs, natural real-data certificate-limited cases, or statistical generalization.
+
+Current integrated V21 manuscript (single PDF with Appendices A–E) and separate source-safe/private packages are in the project author's Google Drive V21 folder. Do not merge this branch or reuse V13 default-branch claims as current V21 without author review.
