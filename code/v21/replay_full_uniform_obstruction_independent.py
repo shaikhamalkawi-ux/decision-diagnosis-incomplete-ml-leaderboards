@@ -8,7 +8,7 @@ from pathlib import Path
 from itertools import product
 from fractions import Fraction as F
 import json,hashlib,time
-ROOT=Path(__file__).resolve().parent.parent
+ROOT=Path(__file__).resolve().parent.parent.parent
 # Rank rows encoded in multiples of 1/6; A/B/C/D indices fixed.
 UNKNOWN=[(6,0,2,4),(6,2,0,4),(6,1,1,4),(6,0,3,3),(6,3,0,3),(6,2,2,2)]
 KNOWN=[((0,2,4,6),21),((3,6,3,0),21),((0,4,4,4),5)]
