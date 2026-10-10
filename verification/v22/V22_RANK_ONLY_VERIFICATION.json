@@ -1,0 +1,65 @@
+{
+  "verification": "PASS",
+  "cases": 4,
+  "metamorphic_permutation_assertions": 192,
+  "total_rank_patterns": 68,
+  "details": [
+    {
+      "case_id": 0,
+      "source_sha256": "7c8c225a9ff8ec48658c5d211184a429e4506f05d981393afb1ceb6964b32853",
+      "legal_rank_rows": 11,
+      "all_candidates_semantic_min": "1/48",
+      "affected_candidate_semantic_min": "1/48",
+      "best_fixed_single_action": "-1/24",
+      "optimal_fixed_joint_mixture": "0",
+      "dual_upper_bound": "0",
+      "dual_lower_bound": "0",
+      "task_permutation_assertions": 24,
+      "model_permutation_assertions": 24,
+      "status": "PASS"
+    },
+    {
+      "case_id": 1,
+      "source_sha256": "7c8c225a9ff8ec48658c5d211184a429e4506f05d981393afb1ceb6964b32853",
+      "legal_rank_rows": 19,
+      "all_candidates_semantic_min": "1/48",
+      "affected_candidate_semantic_min": "1/48",
+      "best_fixed_single_action": "-1/24",
+      "optimal_fixed_joint_mixture": "0",
+      "dual_upper_bound": "0",
+      "dual_lower_bound": "0",
+      "task_permutation_assertions": 24,
+      "model_permutation_assertions": 24,
+      "status": "PASS"
+    },
+    {
+      "case_id": 2,
+      "source_sha256": "7c8c225a9ff8ec48658c5d211184a429e4506f05d981393afb1ceb6964b32853",
+      "legal_rank_rows": 19,
+      "all_candidates_semantic_min": "1/48",
+      "affected_candidate_semantic_min": "1/48",
+      "best_fixed_single_action": "-1/24",
+      "optimal_fixed_joint_mixture": "0",
+      "dual_upper_bound": "0",
+      "dual_lower_bound": "0",
+      "task_permutation_assertions": 24,
+      "model_permutation_assertions": 24,
+      "status": "PASS"
+    },
+    {
+      "case_id": 3,
+      "source_sha256": "7c8c225a9ff8ec48658c5d211184a429e4506f05d981393afb1ceb6964b32853",
+      "legal_rank_rows": 19,
+      "all_candidates_semantic_min": "1/48",
+      "affected_candidate_semantic_min": "1/48",
+      "best_fixed_single_action": "-1/24",
+      "optimal_fixed_joint_mixture": "0",
+      "dual_upper_bound": "0",
+      "dual_lower_bound": "0",
+      "task_permutation_assertions": 24,
+      "model_permutation_assertions": 24,
+      "status": "PASS"
+    }
+  ],
+  "boundary": "Source-realizability not independently established without restricted original fold-score CSV."
+}

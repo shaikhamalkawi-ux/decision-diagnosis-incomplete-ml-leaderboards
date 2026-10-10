@@ -1,12 +1,12 @@
-Active research manuscript candidate: G2_KBS_Decision_Diagnostic_Leaderboards_V21
+Active research manuscript candidate: G2_KBS_Decision_Diagnostic_Leaderboards_V22
 Date: 2026-10-11
-Status: author scientific-review candidate; not a final journal submission.
+Status: independent-exact numerical research completed; author's journal submission remains HOLD.
 
-Scientific ancestry:
-- Original V19 fixed-order TabArena mathematical and empirical benchmark.
-- Separate historical V20 unordered-evidence branch (585 necessary, 756/636 sufficient), now incorporated.
-- V21 adds verified strict-task-rank witnesses and bounded independent BenchPress benchmark-row transfer.
+Authoritative V22 manuscript and confidential source-gated audit are in:
+Google Drive /3 WS/G2_KBS_Decision_Diagnostic_Leaderboards_V22.
 
-The public code on this branch reproduces the exact four/68-task constructions and 72 BenchPress decision states. It DOES NOT contain restricted TabArena raw fold vectors or source-dependent full trace witnesses. Full V19/V20 replay still requires author-side licensed sources.
+Main historical baseline and V21 draft PR remain unchanged. This branch is a stacked source-safe research addition.
 
-Version history and main branch remain preserved. Do not merge until author approval, source rights review and reproduction checks have been reviewed.
+NEW: four exploratory four-model/four-task TabArena source-anchored certificate-limited states, all four verified under exact source-derived rank constraints and separate private source realization. Semantic minimum +1/48, fixed-action maximum-minimum -1/24, best completion-independent mixed saddle 0. Independent disjoint 26,880-case TabArena and 28,000-case BenchPress negative screens retained. Not a prevalence or full 51-by-14 generalization claim. The public branch does not reproduce restricted source-fold admissions; see author-only package for full replay.
+
+Do not merge, publish the manuscript, redistribute raw source fold data, or infer efficiency gains without author approval and source-licensing review.
