@@ -7,7 +7,7 @@ frequency claims. Alternative rank rows are explicitly hypothetical completions.
 """
 from pathlib import Path
 import zipfile,io,pandas as pd,numpy as np, hashlib,json,csv,random
-ROOT=Path(__file__).resolve().parent.parent; OUT=ROOT/'results';OUT.mkdir(exist_ok=True)
+ROOT=Path(__file__).resolve().parent.parent.parent; OUT=ROOT/'results';OUT.mkdir(exist_ok=True)
 ZIP=Path('/mnt/data/CERT_Bench_v0_8_ReleaseIntegrityWitnessClosure_Package.zip')  # optional historical fallback
 LOCAL_SCORES=ROOT/'inputs/benchpress_primary_complete_case_scores.csv'
 LOCAL_RANKS=ROOT/'inputs/benchpress_primary10__rank__equal__normalized_matrix.csv'
