@@ -7,7 +7,7 @@ all constant-decision upper/lower-box certificates for 72 prespecified states.
 from pathlib import Path
 from fractions import Fraction
 import pandas as pd,numpy as np,json,collections,csv
-ROOT=Path(__file__).resolve().parent.parent
+ROOT=Path(__file__).resolve().parent.parent.parent
 DATA=ROOT/'inputs/benchpress_primary_complete_case_scores.csv'
 if not DATA.exists():
     import zipfile,io
