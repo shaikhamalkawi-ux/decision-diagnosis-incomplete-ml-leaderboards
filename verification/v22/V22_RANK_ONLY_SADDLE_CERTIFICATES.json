@@ -1,0 +1,811 @@
+{
+  "title": "V22 KBS four source-derived rank-only finite-minimax certificates",
+  "source_sha256": "7c8c225a9ff8ec48658c5d211184a429e4506f05d981393afb1ceb6964b32853",
+  "admitted_source_reference": "TabArena historical source, 35,904 observations, 51 tasks; exact 4x4 derived slices",
+  "scope": "Four post-search exploratory masked-fold subsets (not the original 51x14 fixed-trace experiment)",
+  "exact_rank_encoding": "twice within-task rank minus two, so normalized rank = rank_code/6 for four methods",
+  "cases": [
+    {
+      "case_id": 0,
+      "source_archive_hash": "7c8c225a9ff8ec48658c5d211184a429e4506f05d981393afb1ceb6964b32853",
+      "method_names": [
+        "KNN (tuned + ensemble)",
+        "RF (tuned + ensemble)",
+        "TABDPT (default)",
+        "TABM (tuned + ensemble)"
+      ],
+      "task_names": [
+        "Bioresponse",
+        "Marketing_Campaign",
+        "blood-transfusion-service-center",
+        "jm1"
+      ],
+      "hidden_task": "blood-transfusion-service-center",
+      "hidden_fold_id": "0",
+      "task_rank_codes_complete_data": [
+        [
+          6,
+          0,
+          4,
+          2
+        ],
+        [
+          6,
+          4,
+          2,
+          0
+        ],
+        [
+          6,
+          4,
+          0,
+          2
+        ],
+        [
+          6,
+          2,
+          0,
+          4
+        ]
+      ],
+      "admissible_unknown_task_rank_rows": [
+        [
+          5,
+          5,
+          1,
+          1
+        ],
+        [
+          4,
+          6,
+          1,
+          1
+        ],
+        [
+          6,
+          4,
+          1,
+          1
+        ],
+        [
+          6,
+          3,
+          0,
+          3
+        ],
+        [
+          5,
+          5,
+          0,
+          2
+        ],
+        [
+          5,
+          5,
+          2,
+          0
+        ],
+        [
+          4,
+          6,
+          0,
+          2
+        ],
+        [
+          4,
+          6,
+          2,
+          0
+        ],
+        [
+          6,
+          2,
+          0,
+          4
+        ],
+        [
+          6,
+          4,
+          0,
+          2
+        ],
+        [
+          6,
+          4,
+          2,
+          0
+        ]
+      ],
+      "epsilon": "1/8",
+      "affected_candidate_index": 2,
+      "completion_mixture": [
+        {
+          "rank_row": [
+            4,
+            6,
+            0,
+            2
+          ],
+          "probability": "1/2"
+        },
+        {
+          "rank_row": [
+            6,
+            2,
+            0,
+            4
+          ],
+          "probability": "1/2"
+        }
+      ],
+      "fixed_action_mixture": [
+        {
+          "rival_index": 1,
+          "weight_vector": [
+            "3/8",
+            "1/4",
+            "1/8",
+            "1/4"
+          ],
+          "probability": "1/2"
+        },
+        {
+          "rival_index": 3,
+          "weight_vector": [
+            "3/8",
+            "1/4",
+            "1/4",
+            "1/8"
+          ],
+          "probability": "1/2"
+        }
+      ],
+      "expected_exact_values": {
+        "best_fixed_action": "-1/24",
+        "fixed_joint_mixture": "0",
+        "realizable_semantic": "1/48"
+      },
+      "provenance_note": "Source-derived ordinal rank table, not an original third-party numeric score row."
+    },
+    {
+      "case_id": 1,
+      "source_archive_hash": "7c8c225a9ff8ec48658c5d211184a429e4506f05d981393afb1ceb6964b32853",
+      "method_names": [
+        "FASTAI (tuned + ensemble)",
+        "KNN (tuned + ensemble)",
+        "MNCA (tuned + ensemble)",
+        "NN_TORCH (tuned + ensemble)"
+      ],
+      "task_names": [
+        "APSFailure",
+        "bank-marketing",
+        "diabetes",
+        "polish_companies_bankruptcy"
+      ],
+      "hidden_task": "polish_companies_bankruptcy",
+      "hidden_fold_id": "0",
+      "task_rank_codes_complete_data": [
+        [
+          4,
+          6,
+          2,
+          0
+        ],
+        [
+          2,
+          6,
+          0,
+          4
+        ],
+        [
+          0,
+          6,
+          4,
+          2
+        ],
+        [
+          4,
+          6,
+          0,
+          2
+        ]
+      ],
+      "admissible_unknown_task_rank_rows": [
+        [
+          2,
+          6,
+          2,
+          2
+        ],
+        [
+          1,
+          6,
+          1,
+          4
+        ],
+        [
+          1,
+          6,
+          4,
+          1
+        ],
+        [
+          0,
+          6,
+          3,
+          3
+        ],
+        [
+          0,
+          6,
+          2,
+          4
+        ],
+        [
+          0,
+          6,
+          4,
+          2
+        ],
+        [
+          5,
+          5,
+          1,
+          1
+        ],
+        [
+          4,
+          6,
+          1,
+          1
+        ],
+        [
+          3,
+          6,
+          0,
+          3
+        ],
+        [
+          3,
+          6,
+          3,
+          0
+        ],
+        [
+          2,
+          6,
+          0,
+          4
+        ],
+        [
+          2,
+          6,
+          4,
+          0
+        ],
+        [
+          6,
+          4,
+          1,
+          1
+        ],
+        [
+          5,
+          5,
+          0,
+          2
+        ],
+        [
+          5,
+          5,
+          2,
+          0
+        ],
+        [
+          4,
+          6,
+          0,
+          2
+        ],
+        [
+          4,
+          6,
+          2,
+          0
+        ],
+        [
+          6,
+          4,
+          0,
+          2
+        ],
+        [
+          6,
+          4,
+          2,
+          0
+        ]
+      ],
+      "epsilon": "1/8",
+      "affected_candidate_index": 2,
+      "completion_mixture": [
+        {
+          "rank_row": [
+            2,
+            6,
+            0,
+            4
+          ],
+          "probability": "1/2"
+        },
+        {
+          "rank_row": [
+            6,
+            4,
+            0,
+            2
+          ],
+          "probability": "1/2"
+        }
+      ],
+      "fixed_action_mixture": [
+        {
+          "rival_index": 0,
+          "weight_vector": [
+            "1/4",
+            "1/4",
+            "3/8",
+            "1/8"
+          ],
+          "probability": "1/2"
+        },
+        {
+          "rival_index": 3,
+          "weight_vector": [
+            "3/8",
+            "1/8",
+            "1/4",
+            "1/4"
+          ],
+          "probability": "1/2"
+        }
+      ],
+      "expected_exact_values": {
+        "best_fixed_action": "-1/24",
+        "fixed_joint_mixture": "0",
+        "realizable_semantic": "1/48"
+      },
+      "provenance_note": "Source-derived ordinal rank table, not an original third-party numeric score row."
+    },
+    {
+      "case_id": 2,
+      "source_archive_hash": "7c8c225a9ff8ec48658c5d211184a429e4506f05d981393afb1ceb6964b32853",
+      "method_names": [
+        "KNN (tuned + ensemble)",
+        "NN_TORCH (tuned + ensemble)",
+        "RF (tuned + ensemble)",
+        "XT (tuned + ensemble)"
+      ],
+      "task_names": [
+        "APSFailure",
+        "bank-marketing",
+        "diabetes",
+        "polish_companies_bankruptcy"
+      ],
+      "hidden_task": "polish_companies_bankruptcy",
+      "hidden_fold_id": "0",
+      "task_rank_codes_complete_data": [
+        [
+          6,
+          0,
+          4,
+          2
+        ],
+        [
+          6,
+          2,
+          0,
+          4
+        ],
+        [
+          6,
+          4,
+          2,
+          0
+        ],
+        [
+          6,
+          0,
+          2,
+          4
+        ]
+      ],
+      "admissible_unknown_task_rank_rows": [
+        [
+          6,
+          2,
+          2,
+          2
+        ],
+        [
+          5,
+          1,
+          1,
+          5
+        ],
+        [
+          4,
+          1,
+          1,
+          6
+        ],
+        [
+          6,
+          1,
+          1,
+          4
+        ],
+        [
+          6,
+          1,
+          4,
+          1
+        ],
+        [
+          6,
+          0,
+          3,
+          3
+        ],
+        [
+          5,
+          0,
+          2,
+          5
+        ],
+        [
+          4,
+          0,
+          2,
+          6
+        ],
+        [
+          6,
+          4,
+          1,
+          1
+        ],
+        [
+          6,
+          3,
+          0,
+          3
+        ],
+        [
+          5,
+          2,
+          0,
+          5
+        ],
+        [
+          4,
+          2,
+          0,
+          6
+        ],
+        [
+          6,
+          3,
+          3,
+          0
+        ],
+        [
+          6,
+          0,
+          2,
+          4
+        ],
+        [
+          6,
+          0,
+          4,
+          2
+        ],
+        [
+          6,
+          2,
+          0,
+          4
+        ],
+        [
+          6,
+          2,
+          4,
+          0
+        ],
+        [
+          6,
+          4,
+          0,
+          2
+        ],
+        [
+          6,
+          4,
+          2,
+          0
+        ]
+      ],
+      "epsilon": "1/8",
+      "affected_candidate_index": 1,
+      "completion_mixture": [
+        {
+          "rank_row": [
+            4,
+            0,
+            2,
+            6
+          ],
+          "probability": "1/2"
+        },
+        {
+          "rank_row": [
+            6,
+            0,
+            4,
+            2
+          ],
+          "probability": "1/2"
+        }
+      ],
+      "fixed_action_mixture": [
+        {
+          "rival_index": 2,
+          "weight_vector": [
+            "1/8",
+            "3/8",
+            "1/4",
+            "1/4"
+          ],
+          "probability": "1/2"
+        },
+        {
+          "rival_index": 3,
+          "weight_vector": [
+            "1/4",
+            "1/4",
+            "3/8",
+            "1/8"
+          ],
+          "probability": "1/2"
+        }
+      ],
+      "expected_exact_values": {
+        "best_fixed_action": "-1/24",
+        "fixed_joint_mixture": "0",
+        "realizable_semantic": "1/48"
+      },
+      "provenance_note": "Source-derived ordinal rank table, not an original third-party numeric score row."
+    },
+    {
+      "case_id": 3,
+      "source_archive_hash": "7c8c225a9ff8ec48658c5d211184a429e4506f05d981393afb1ceb6964b32853",
+      "method_names": [
+        "KNN (tuned + ensemble)",
+        "NN_TORCH (tuned + ensemble)",
+        "TABDPT (default)",
+        "XT (tuned + ensemble)"
+      ],
+      "task_names": [
+        "Bioresponse",
+        "heloc",
+        "polish_companies_bankruptcy",
+        "seismic-bumps"
+      ],
+      "hidden_task": "polish_companies_bankruptcy",
+      "hidden_fold_id": "0",
+      "task_rank_codes_complete_data": [
+        [
+          6,
+          2,
+          4,
+          0
+        ],
+        [
+          6,
+          0,
+          2,
+          4
+        ],
+        [
+          6,
+          2,
+          0,
+          4
+        ],
+        [
+          6,
+          4,
+          0,
+          2
+        ]
+      ],
+      "admissible_unknown_task_rank_rows": [
+        [
+          6,
+          2,
+          2,
+          2
+        ],
+        [
+          5,
+          1,
+          1,
+          5
+        ],
+        [
+          4,
+          1,
+          1,
+          6
+        ],
+        [
+          6,
+          1,
+          1,
+          4
+        ],
+        [
+          6,
+          1,
+          4,
+          1
+        ],
+        [
+          6,
+          0,
+          3,
+          3
+        ],
+        [
+          5,
+          0,
+          2,
+          5
+        ],
+        [
+          4,
+          0,
+          2,
+          6
+        ],
+        [
+          6,
+          4,
+          1,
+          1
+        ],
+        [
+          6,
+          3,
+          0,
+          3
+        ],
+        [
+          5,
+          2,
+          0,
+          5
+        ],
+        [
+          4,
+          2,
+          0,
+          6
+        ],
+        [
+          6,
+          3,
+          3,
+          0
+        ],
+        [
+          6,
+          0,
+          2,
+          4
+        ],
+        [
+          6,
+          0,
+          4,
+          2
+        ],
+        [
+          6,
+          2,
+          0,
+          4
+        ],
+        [
+          6,
+          2,
+          4,
+          0
+        ],
+        [
+          6,
+          4,
+          0,
+          2
+        ],
+        [
+          6,
+          4,
+          2,
+          0
+        ]
+      ],
+      "epsilon": "1/8",
+      "affected_candidate_index": 2,
+      "completion_mixture": [
+        {
+          "rank_row": [
+            4,
+            2,
+            0,
+            6
+          ],
+          "probability": "1/2"
+        },
+        {
+          "rank_row": [
+            6,
+            4,
+            0,
+            2
+          ],
+          "probability": "1/2"
+        }
+      ],
+      "fixed_action_mixture": [
+        {
+          "rival_index": 1,
+          "weight_vector": [
+            "3/8",
+            "1/4",
+            "1/4",
+            "1/8"
+          ],
+          "probability": "1/2"
+        },
+        {
+          "rival_index": 3,
+          "weight_vector": [
+            "3/8",
+            "1/4",
+            "1/8",
+            "1/4"
+          ],
+          "probability": "1/2"
+        }
+      ],
+      "expected_exact_values": {
+        "best_fixed_action": "-1/24",
+        "fixed_joint_mixture": "0",
+        "realizable_semantic": "1/48"
+      },
+      "provenance_note": "Source-derived ordinal rank table, not an original third-party numeric score row."
+    }
+  ],
+  "source_feasibility_gate": "Individual legal score mean interval feasibility requires original source CSV and private checker, intentionally not included here.",
+  "independence_gate": "Source-independent code can verify rank-space saddles but cannot independently verify raw-fold domain realizations from rank-only ledger.",
+  "not_claimed": [
+    "general prevalence",
+    "general completion solver",
+    "binary64 source-order equality",
+    "entire original TabArena 51x14 certificate gap",
+    "prospective evaluation savings",
+    "independent human replication"
+  ]
+}
